@@ -2,7 +2,10 @@
 
 
 int main() {
-  puts("hello from time server");
+  time_t timer;
+  time(&timer);
+
+  printf("Local time: %s \n", ctime(&timer));
 
   return 0;
 }

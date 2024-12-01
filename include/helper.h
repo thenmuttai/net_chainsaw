@@ -2,7 +2,7 @@
 #define HELPER_HEADER_FILE
 
 // _WIN32 defined by compiler to indicate it's a windows compilation
-#if defined(_WIN32)               /* do windows stuff */
+#if defined(_WIN32)   /* ---------------------------------- do windows stuff */
 // _WIN32_WINNT - specify minimum windows SDK(or OS) version needed
 #ifndef _WIN32_WINNT
 #define _WIN32_WINNT   _WIN32_WINNT_WIN7   // Windows 7
@@ -25,7 +25,7 @@
 /* GET SOCKET ERROR */
 #define GETSOCKERRORNO()  (WSAGetLastError())
 
-#else                             /* do linux stuff */
+#else                 /* ------------------------------------ do linux stuff */
 
 // Berkeley socket specific header files
 #include <sys/types.h>
