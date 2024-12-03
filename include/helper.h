@@ -57,4 +57,8 @@
 #include <time.h>
 
 
+// Function declerations
+void winsock_init(WSADATA *);
+
+
 #endif   // HELPER_HEADER_FILE
